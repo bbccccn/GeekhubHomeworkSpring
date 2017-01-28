@@ -1,4 +1,4 @@
-package Entitites;
+package Entities;
 
 public class Tyres {
     private double size;
@@ -13,5 +13,13 @@ public class Tyres {
 
     public void setSize(double size) {
         this.size = size;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 }

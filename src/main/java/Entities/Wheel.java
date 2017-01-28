@@ -1,4 +1,4 @@
-package Entitites;
+package Entities;
 
 public class Wheel {
     private Tyres tyres;

@@ -3,4 +3,22 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="car" class="Entities.Car">
+        <property name="engine" ref="engine"></property>
+        <property name="wheels" ref="wheel"></property>
+    </bean>
+
+    <bean id="engine" class="Entities.Engine">
+        <property name="engineCapacity" value="2.4"></property>
+    </bean>
+
+    <bean id="wheel" class="Entities.Wheel">
+        <property name="tyres" ref="tyres"></property>
+    </bean>
+
+    <bean id="tyres" class="Entities.Tyres">
+        <property name="size" value="22.7"></property>
+        <property name="name" value="Zinn"></property>
+    </bean>
+
 </beans>

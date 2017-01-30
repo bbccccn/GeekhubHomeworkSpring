@@ -8,6 +8,11 @@ public class Car {
 
     public Car(){}
 
+    public Car(List<Wheel> wheels, Engine engine) {
+        this.wheels = wheels;
+        this.engine = engine;
+    }
+
     public List<Wheel> getWheels() {
         return wheels;
     }

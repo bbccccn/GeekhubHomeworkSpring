@@ -1,8 +1,8 @@
 package Entitites;
 
 public class Tyres {
-    private double size;
-    private String name;
+    protected double size;
+    protected String name;
 
     public Tyres() {
     }
@@ -13,5 +13,13 @@ public class Tyres {
 
     public void setSize(double size) {
         this.size = size;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

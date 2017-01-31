@@ -1,6 +1,9 @@
 package Entitites;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Wheel {
+    @Autowired
     private Tyres tyres;
 
     public Wheel() {

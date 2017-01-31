@@ -1,7 +1,7 @@
 package Entitites;
 
 public class Engine {
-    private double engineCapacity;
+    private double engineCapacity = 2.4;
 
     public Engine() {
     }

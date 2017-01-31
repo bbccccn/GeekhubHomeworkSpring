@@ -1,12 +1,20 @@
 package Entitites;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
+@Service
 public class Car {
     private List<Wheel> wheels;
     private Engine engine;
 
-    public Car(){}
+    @Autowired
+    public Car(Engine engine, List<Wheel> wheels){
+        this.engine = engine;
+        this.wheels = wheels;
+    }
 
     public List<Wheel> getWheels() {
         return wheels;
